@@ -5,29 +5,29 @@ package package_10_3;
  *It also passes in the name, address, and number variables in its constructor to the Person constructor using the super keyword*/
 public class Customer extends Person{
 
-	private String idNumber;
-    private boolean mailList;
+	private String customerNumber;
+    private boolean receiveMail;
 
-    public Customer(String name, String address, String number, String idNumber, boolean mailList) {
+    public Customer(String name, String address, String number, String idNumber, boolean receiveMail) {
         super(name, address, number); // Call the superclass (Person) constructor
-        this.idNumber = idNumber;
-        this.mailList = mailList;
+        this.customerNumber = idNumber;
+        this.receiveMail = receiveMail;
     }
     
     public String getCustomerNumber() {
-        return idNumber;
+        return customerNumber;
     }
 
     public boolean inMailList() {
-        return mailList;
+        return receiveMail;
     }
 
-    public void setCustomerNumber(String idNumber) {
-        this.idNumber = idNumber;
+    public void setCustomerNumber(String customerNumber) {
+        this.customerNumber = customerNumber;
     }
 
     public void setReceiveMail(boolean receiveMail) {
-        this.mailList = receiveMail;
+        this.receiveMail = receiveMail;
     }
 
 }
