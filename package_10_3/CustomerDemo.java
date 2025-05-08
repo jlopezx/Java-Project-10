@@ -20,14 +20,14 @@ public class CustomerDemo {
 			String phoneNumber = keyboard.nextLine();
 			
 			System.out.print("Enter customer number: ");
-			String idNumber = keyboard.nextLine();
+			String customerNumber = keyboard.nextLine();
 			
 			System.out.print("Enter yes/no -- does the customer want to receive mail?:");
 			String mailListString = keyboard.nextLine();
 			
-			boolean mailList = (mailListString.equalsIgnoreCase("yes") || mailListString.equalsIgnoreCase("y"));
+			boolean receiveMail = (mailListString.equalsIgnoreCase("yes") || mailListString.equalsIgnoreCase("y"));
 			
-			Customer customer = new Customer(name, address, phoneNumber, idNumber, mailList);
+			Customer customer = new Customer(name, address, phoneNumber, customerNumber, receiveMail);
 			
 			System.out.println();
 			System.out.println("Customer:");
