@@ -8,9 +8,9 @@ public class Customer extends Person{
 	private String customerNumber;
 	private boolean receiveMail;
 
-    public Customer(String name, String address, String number, String idNumber, boolean receiveMail) {
+    public Customer(String name, String address, String number, String customerNumber, boolean receiveMail) {
         super(name, address, number); // Call the superclass (Person) constructor
-        this.customerNumber = idNumber;
+        this.customerNumber = customerNumber;
         this.receiveMail = receiveMail;
     }
     
